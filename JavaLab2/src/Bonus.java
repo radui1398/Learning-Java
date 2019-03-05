@@ -1,4 +1,3 @@
-// Java program for stable marriage problem
 import java.util.*;
 
 /**

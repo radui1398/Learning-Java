@@ -1,11 +1,10 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class TravelMap {
-    List<Node> nodes=new ArrayList<Node>();
-    List<Edge> edges=new ArrayList<Edge>();
+    private List<Node> nodes=new ArrayList<Node>();
+    private List<Edge> edges=new ArrayList<Edge>();
 
     public List<Node> getNodes() {
         Collections.sort(nodes);
