@@ -1,5 +1,5 @@
 public interface Payable {
-    void setEntryFee(int fee);
-    int getEntryFee();
+    void setEntryFee(double fee);
+    double getEntryFee();
     void getType();
 }

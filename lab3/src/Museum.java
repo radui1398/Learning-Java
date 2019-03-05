@@ -1,6 +1,6 @@
 public class Museum extends Node implements Payable {
-    int numberExponeates=0;
-    int fee;
+    private int numberExponeates=0;
+    private double fee;
 
     public Museum(String name) {
         super(name);
@@ -15,12 +15,12 @@ public class Museum extends Node implements Payable {
     }
 
     @Override
-    public void setEntryFee(int fee) {
+    public void setEntryFee(double fee) {
         this.fee=fee;
     }
 
     @Override
-    public int getEntryFee() {
+    public double getEntryFee() {
         return this.fee;
     }
 
