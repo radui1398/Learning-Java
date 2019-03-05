@@ -15,7 +15,4 @@ public class Edge {
         this.v2 = v2;
         this.oneWayStreet=type;
     }
-
-
 }
-

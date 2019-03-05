@@ -1,6 +1,8 @@
-public class Restaurant extends Node implements Classifiable {
+import java.time.LocalTime;
+
+public class Restaurant extends Node implements Visitable {
     String type;
-    int rank;
+    LocalTime openinghours;
     public Restaurant(String name) {
         super(name);
     }
@@ -14,13 +16,13 @@ public class Restaurant extends Node implements Classifiable {
     }
 
     @Override
-    public void setRank(int rank) {
-        this.rank=rank;
+    public void setOpeningHours(LocalTime opening) {
+        this.openinghours=opening;
     }
 
     @Override
-    public int getRank() {
-        return rank;
+    public LocalTime getOpeningHours() {
+        return openinghours;
     }
 
     @Override
