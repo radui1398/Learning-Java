@@ -27,7 +27,7 @@ public class Main {
         map.addNode(v4);
         map.addNode(v6);
 
-        LocalTime opening = LocalTime.of(13, 30, 0);
+        LocalTime opening = LocalTime.of(13, 31, 0);
         v3.setOpeningHours(opening);
 
 
