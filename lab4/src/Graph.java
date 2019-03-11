@@ -1,4 +1,7 @@
-public class Graph {
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class Graph implements java.io.Serializable{
     private String name;
     private String tgf;
     private String img;
@@ -19,5 +22,14 @@ public class Graph {
 
     public String getImg() {
         return img;
+    }
+
+    @Override
+    public String toString() {
+        return "Graph{" +
+                "name='" + name + '\'' +
+                ", tgf='" + tgf + '\'' +
+                ", img='" + img + '\'' +
+                '}';
     }
 }
