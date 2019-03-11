@@ -28,8 +28,13 @@ public class TravelMap {
 
     public int getCost(Node v1,Node v2){
         for(Edge edge:edges){
+            //Verificare edge simplu
             if(edge.getNode(1)==v1 && edge.getNode(2)==v2)
                 return edge.getCost();
+            else
+                //Verificare TwoWayStreet
+                if(edge.getNode(1)==v2 && edge.getNode(2)==v1 && edge.getType() == true)
+                    return edge.getCost();
         }
         return 0;
     }
@@ -39,6 +44,7 @@ public class TravelMap {
     }
 
     public int[][] toGraph(){
+        //Convertire map la Graph
         int nrOfNodes = getNrOfNodes();
         int graph[][] = new int[nrOfNodes+1][nrOfNodes+1];
         int node1Index,node2Index;

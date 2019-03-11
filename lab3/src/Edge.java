@@ -26,4 +26,8 @@ public class Edge {
     public int getCost(){
         return this.cost;
     }
+
+    public boolean getType(){
+        return this.twoWayStreet;
+    }
 }
