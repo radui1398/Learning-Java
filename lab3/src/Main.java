@@ -40,6 +40,7 @@ public class Main {
         v7.setEndingHours(ending2);
 
         map.addEdge(v1, v2, 15); //two way street by default
+        map.addEdge(v2,v5, 10);
         map.addEdge(v3, v2, 1, false); //one-way street
 
         System.out.println("The map is: \n" + map.getNodes());
@@ -64,5 +65,7 @@ public class Main {
         /**
          *  Implement Dijkstra algorithm for finding shortest path
          */
+        Greedy optional = new Greedy(map);
+        optional.dijkstra(v1,v5);
     }
 }
