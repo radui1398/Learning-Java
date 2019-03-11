@@ -15,4 +15,15 @@ public class Edge {
         this.v2 = v2;
         this.twoWayStreet=type;
     }
+
+    public Node getNode(int nr){
+        if(nr==1)
+            return this.v1;
+        else
+            return this.v2;
+    }
+
+    public int getCost(){
+        return this.cost;
+    }
 }

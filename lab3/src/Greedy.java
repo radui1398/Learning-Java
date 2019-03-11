@@ -1,14 +1,14 @@
-// A Java program for Dijkstra's single source shortest path algorithm.
-// The program is for adjacency matrix representation of the graph
+// A Java program for Dijkstra's single source shortest path algorithm. 
+// The program is for adjacency matrix representation of the graph 
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class ShortestPath
+class Greedy
 {
     // A utility function to find the vertex with minimum distance value,
     // from the set of vertices not yet included in shortest path tree
-    static final int V=9;
+    private int V;
     int minDistance(int dist[], Boolean sptSet[])
     {
         // Initialize min value
@@ -35,8 +35,9 @@ class ShortestPath
     // Funtion that implements Dijkstra's single source shortest path
     // algorithm for a graph represented using adjacency matrix
     // representation
-    void dijkstra(int graph[][], int src)
+    void dijkstra(int graph[][], int src, int size)
     {
+        V=size;
         int dist[] = new int[V]; // The output array. dist[i] will hold
         // the shortest distance from src to i
 
@@ -81,23 +82,5 @@ class ShortestPath
         // print the constructed distance array
         printSolution(dist, V);
     }
-
-    // Driver method
-    public static void main (String[] args)
-    {
-        /* Let us create the example graph discussed above */
-        int graph[][] = new int[][]{{0, 4, 0, 0, 0, 0, 0, 8, 0},
-                {4, 0, 8, 0, 0, 0, 0, 11, 0},
-                {0, 8, 0, 7, 0, 4, 0, 0, 2},
-                {0, 0, 7, 0, 9, 14, 0, 0, 0},
-                {0, 0, 0, 9, 0, 10, 0, 0, 0},
-                {0, 0, 4, 14, 10, 0, 2, 0, 0},
-                {0, 0, 0, 0, 0, 2, 0, 1, 6},
-                {8, 11, 0, 0, 0, 0, 1, 0, 7},
-                {0, 0, 2, 0, 0, 0, 6, 7, 0}
-        };
-        ShortestPath t = new ShortestPath();
-        t.dijkstra(graph, 0);
-    }
 }
-//This code is contributed by Aakash Hasija
+//This code is contributed by Aakash Hasija 

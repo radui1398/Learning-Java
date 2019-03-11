@@ -64,5 +64,10 @@ public class Main {
         /**
          *  Implement Dijkstra algorithm for finding shortest path
          */
+        /* Let us create the example graph discussed above */
+        int graph[][] = map.toGraph();
+
+        Greedy optional = new Greedy();
+        optional.dijkstra(graph, 0,map.getNrOfNodes()+1);
     }
 }
