@@ -43,7 +43,9 @@ public class Catalog implements java.io.Serializable{
                 Desktop desktop = Desktop.getDesktop();
                 File myFile = new File(folder + "/" + graph.getTgf());
                 desktop.open(myFile);
-            } catch (IOException ex) {}
+            } catch (IOException ex) {
+                System.out.println("Fisierul nu exista!");
+            }
         }
     }
 
@@ -86,7 +88,7 @@ public class Catalog implements java.io.Serializable{
             ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
             objectOut.writeObject(this);
             objectOut.close();
-            System.out.println("The Object  was succesfully written to a file");
+            System.out.println("Salvarea a reusit.");
 
         } catch (Exception ex) {
             ex.printStackTrace();
