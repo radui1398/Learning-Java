@@ -15,7 +15,7 @@ public class Main {
 
         catalog.save("catalog.dat");
 
-        catalog.open("K5");
+        catalog.open("K4");
         catalog.list();
 
     }

@@ -3,6 +3,7 @@ import java.io.*;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.lang.Object;
 
 /**
  * Clasa catalog serializata.
@@ -30,6 +31,20 @@ public class Catalog implements java.io.Serializable{
         graphs.add(graph);
     }
 
+
+    static void extensionCheckException() throws IllegalAccessException
+    {
+        throw new IllegalAccessException("extension");
+    }
+
+    private static String getFileExtension(File file) {
+        String fileName = file.getName();
+        if(fileName.lastIndexOf(".") != -1 && fileName.lastIndexOf(".") != 0)
+            return fileName.substring(fileName.lastIndexOf(".")+1);
+        else return "";
+    }
+
+
     /**
      * Deschide un fisier .tgf
      *
@@ -42,27 +57,27 @@ public class Catalog implements java.io.Serializable{
             try {
                 Desktop desktop = Desktop.getDesktop();
                 File myFile = new File(folder + "/" + graph.getTgf());
-                desktop.open(myFile);
+                if(!getFileExtension(myFile).equals("tgf"))
+                    extensionCheckException();
+                else
+                    desktop.open(myFile);
             } catch (IOException ex) {
+                System.out.println("Desktop-ul nu este suportat!");
+            } catch (IllegalArgumentException ex2){
                 System.out.println("Fisierul nu exista!");
+            } catch(IllegalAccessException ex3){
+                System.out.println("Fisierul nu are extensia corecta.");
             }
         }
     }
 
     /**
-     * Getter
-     *
-     * @return folder
+     * Getters
      */
     public String getFolder() {
         return folder;
     }
 
-    /**
-     * Getter
-     *
-     * @return List
-     */
     public List<Graph> getGraphs() {
         return graphs;
     }
@@ -89,7 +104,6 @@ public class Catalog implements java.io.Serializable{
             objectOut.writeObject(this);
             objectOut.close();
             System.out.println("Salvarea a reusit.");
-
         } catch (Exception ex) {
             ex.printStackTrace();
         }
