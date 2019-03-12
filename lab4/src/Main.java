@@ -15,8 +15,10 @@ public class Main {
         catalog.add (new Graph("K5", "complete/k5.tgf", "complete/view/k5.png"));
 
         catalog.save("catalog.dat");
-
-        catalog.open("K4");
+        try {
+            catalog.open("K4");
+        }catch(ExtensionException ex1){
+        }
         catalog.list();
 
     }

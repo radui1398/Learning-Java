@@ -31,12 +31,6 @@ public class Catalog implements java.io.Serializable{
         graphs.add(graph);
     }
 
-
-    static void extensionCheckException() throws IllegalAccessException
-    {
-        throw new IllegalAccessException("extension");
-    }
-
     private static String getFileExtension(File file) {
         String fileName = file.getName();
         if(fileName.lastIndexOf(".") != -1 && fileName.lastIndexOf(".") != 0)
@@ -50,7 +44,7 @@ public class Catalog implements java.io.Serializable{
      *
      * @param graphName - nume Graph.
      */
-    public void open(String graphName){
+    public void open(String graphName) throws ExtensionException{
         System.out.println("Deschid "+graphName);
         for(Graph graph:graphs){
             if(graph.getName().equals(graphName))
@@ -58,15 +52,13 @@ public class Catalog implements java.io.Serializable{
                 Desktop desktop = Desktop.getDesktop();
                 File myFile = new File(folder + "/" + graph.getTgf());
                 if(!getFileExtension(myFile).equals("tgf"))
-                    extensionCheckException();
+                    throw new ExtensionException();
                 else
                     desktop.open(myFile);
             } catch (IOException ex) {
                 System.out.println("Desktop-ul nu este suportat!");
             } catch (IllegalArgumentException ex2){
                 System.out.println("Fisierul nu exista!");
-            } catch(IllegalAccessException ex3){
-                System.out.println("Fisierul nu are extensia corecta.");
             }
         }
     }

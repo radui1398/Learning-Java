@@ -4,5 +4,5 @@ import java.io.ObjectOutputStream;
 /**
  * Nu am aflat inca ce rost are
  */
-public class CatalogIO {
+public class CatalogIO{
 }
