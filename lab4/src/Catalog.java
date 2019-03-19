@@ -50,7 +50,7 @@ public class Catalog implements java.io.Serializable{
             if(graph.getName().equals(graphName))
             try {
                 Desktop desktop = Desktop.getDesktop();
-                File myFile = new File(folder + "/" + graph.getTgf());
+                File myFile = new File(folder + "\\" + graph.getTgf());
                 if(!getFileExtension(myFile).equals("tgf"))
                     throw new ExtensionException();
                 else
