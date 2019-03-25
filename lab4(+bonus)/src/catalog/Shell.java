@@ -45,11 +45,15 @@ public class Shell{
         Scanner scanner = new Scanner(System.in);
         while (true){
             String line = scanner.nextLine();
+            if (line.isEmpty()){
+                continue;
+            }
             String[] args = splitArguments(line);
 
             if (args[0].equals("exit")){
                 return;
             }
+
 
             if (!commands.containsKey(args[0])){
                 System.out.println("Command does not exist.");
@@ -58,7 +62,7 @@ public class Shell{
 
             try {
                 commands.get(args[0]).run(args);
-            } catch (IOException | IllegalArgumentException e) {
+            } catch (Exception e) {
                 System.out.println(e.toString());
             }
         }
