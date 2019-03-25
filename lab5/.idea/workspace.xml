@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="517e9c20-8916-4cfb-86ad-26998fee5f20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lab5/ui/Generate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lab5/ui/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/Catalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$GetDefPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$GetDefPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$GetImgPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$GetImgPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$LoadCatalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$LoadCatalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$OpenDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$OpenDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$OpenImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$OpenImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$SaveCatalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$SaveCatalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$SendInfoListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController$SendInfoListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/controller/MainFrameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/view/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/com/lab5/ui/view/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5/ui/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5/ui/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5/ui/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5/ui/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5/ui/controller/MainFrameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5/ui/controller/MainFrameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5/ui/view/MainFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5/ui/view/MainFrame.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5/ui/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5/ui/view/MainFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,46 +74,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/view/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
+            <state relative-caret-position="495">
               <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1497#1498#0" expanded="true" />
-                <element signature="e#1529#1530#0" expanded="true" />
-                <element signature="e#1567#1568#0" expanded="true" />
-                <element signature="e#1597#1598#0" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1707#1708#0" expanded="true" />
-                <element signature="e#1738#1739#0" expanded="true" />
-                <element signature="e#1774#1775#0" expanded="true" />
-                <element signature="e#1806#1807#0" expanded="true" />
-                <element signature="e#1841#1842#0" expanded="true" />
-                <element signature="e#1871#1872#0" expanded="true" />
-                <element signature="e#1909#1910#0" expanded="true" />
-                <element signature="e#1942#1943#0" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
-                <element signature="e#2007#2008#0" expanded="true" />
-                <element signature="e#2046#2047#0" expanded="true" />
-                <element signature="e#2075#2076#0" expanded="true" />
-                <element signature="e#2116#2117#0" expanded="true" />
-                <element signature="e#2147#2148#0" expanded="true" />
-                <element signature="e#2185#2186#0" expanded="true" />
-                <element signature="e#2220#2221#0" expanded="true" />
-                <element signature="e#2255#2256#0" expanded="true" />
-                <element signature="e#2285#2286#0" expanded="true" />
-                <element signature="e#2320#2321#0" expanded="true" />
-                <element signature="e#2350#2351#0" expanded="true" />
-                <element signature="e#2389#2390#0" expanded="true" />
-                <element signature="e#2423#2424#0" expanded="true" />
-                <element signature="e#2462#2463#0" expanded="true" />
-                <element signature="e#2496#2497#0" expanded="true" />
-                <element signature="e#2533#2534#0" expanded="true" />
-                <element signature="e#2566#2567#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
-                <element signature="e#2633#2634#0" expanded="true" />
-                <element signature="e#2707#2708#0" expanded="true" />
-                <element signature="e#2739#2740#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/Generate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="420">
               <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -160,10 +102,6 @@
               <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3834#3835#0" expanded="true" />
-                <element signature="e#3878#3879#0" expanded="true" />
-                <element signature="e#3955#3956#0" expanded="true" />
-                <element signature="e#3999#4000#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,12 +184,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553474328973" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laborator6" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -309,16 +248,18 @@
       <workItem from="1552956769581" duration="10017000" />
       <workItem from="1552976338656" duration="4639000" />
       <workItem from="1553471163816" duration="3225000" />
+      <workItem from="1553526831173" duration="61000" />
+      <workItem from="1553529803482" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17881000" />
+    <option name="totallyTimeSpent" value="17924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1366" height="734" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2579666" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2670713" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -432,64 +373,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/view/MainFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/view/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/Generate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="420">
           <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/view/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1529#1530#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1707#1708#0" expanded="true" />
-            <element signature="e#1738#1739#0" expanded="true" />
-            <element signature="e#1774#1775#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#1841#1842#0" expanded="true" />
-            <element signature="e#1871#1872#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-            <element signature="e#1942#1943#0" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
-            <element signature="e#2007#2008#0" expanded="true" />
-            <element signature="e#2046#2047#0" expanded="true" />
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2116#2117#0" expanded="true" />
-            <element signature="e#2147#2148#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2255#2256#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
-            <element signature="e#2320#2321#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
-            <element signature="e#2389#2390#0" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-            <element signature="e#2496#2497#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2566#2567#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2633#2634#0" expanded="true" />
-            <element signature="e#2707#2708#0" expanded="true" />
-            <element signature="e#2739#2740#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/view/MainFrame.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/controller/MainFrameController.java">
       <provider selected="true" editor-type-id="text-editor">
