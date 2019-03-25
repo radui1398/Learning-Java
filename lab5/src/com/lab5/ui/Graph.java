@@ -11,7 +11,8 @@ public class Graph implements java.io.Serializable{
     private String tgf;
     private String img;
     private String type;
-
+    private int nrOfNodes;
+    private int nrOfVertices;
 
     public Graph(){
         name = "";
@@ -61,6 +62,22 @@ public class Graph implements java.io.Serializable{
         this.type = type;
     }
 
+    public int getNrOfNodes() {
+        return nrOfNodes;
+    }
+
+    public void setNrOfNodes(int nrOfNodes) {
+        this.nrOfNodes = nrOfNodes;
+    }
+
+    public int getNrOfVertices() {
+        return nrOfVertices;
+    }
+
+    public void setNrOfVertices(int nrOfVertices) {
+        this.nrOfVertices = nrOfVertices;
+    }
+
     /**
      * Suprascriere pentru afisare
      *
@@ -68,6 +85,6 @@ public class Graph implements java.io.Serializable{
      */
     @Override
     public String toString() {
-        return "Name:" + name + " @ Type: " + type;
+        return "Name:" + name + " @ Type: " + type + " @ Nodes: " + nrOfNodes + " @ Vertices: " + nrOfVertices;
     }
 }

@@ -1,6 +1,9 @@
 package com.lab5.ui.view;
 
 import javax.swing.*;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableColumnModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -24,6 +27,9 @@ public class MainFrame extends JFrame {
     private JButton openImg;
     private JButton saveCatalog;
     private JButton loadCatalog;
+    private JTable graphTable;
+    private JButton doReport;
+    private JPopupMenu popupMenu;
 
     public MainFrame() {
         setSize(WIDTH, HEIGHT);
@@ -92,6 +98,18 @@ public class MainFrame extends JFrame {
 
     public JButton getLoadCatalog() {
         return loadCatalog;
+    }
+
+    public JTable getGraphTable() {
+        return graphTable;
+    }
+
+    public JButton getDoReport() {
+        return doReport;
+    }
+
+    public JPopupMenu getPopupMenu() {
+        return popupMenu;
     }
 }
 

@@ -1,20 +1,23 @@
 package com.lab5.ui.controller;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.*;
+import java.awt.event.*;
 import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import com.lab5.ui.Catalog;
 import com.lab5.ui.ExtensionException;
+import com.lab5.ui.Generate;
 import com.lab5.ui.Graph;
+import com.lab5.ui.command.Command;
 import com.lab5.ui.view.MainFrame;
 
+import static java.lang.Integer.parseInt;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class MainFrameController {
@@ -36,6 +39,9 @@ public class MainFrameController {
     private JButton openImg;
     private JButton saveCatalog;
     private JButton loadCatalog;
+    private JButton generateReport;
+    private JTable graphTable;
+    private JPopupMenu popup;
 
     public MainFrameController() {
         Catalog catalog = new Catalog("/home/radu/graphs");
@@ -65,9 +71,98 @@ public class MainFrameController {
         openImg = mainFrame.getOpenImg();
         saveCatalog = mainFrame.getSaveCatalog();
         loadCatalog = mainFrame.getLoadCatalog();
+        graphTable = mainFrame.getGraphTable();
+        generateReport = mainFrame.getDoReport();
+        initPopup();
 
         this.model = new DefaultListModel();
         listOfGraphs.setModel(model);
+        mainFrame.setSize(400, 500);
+    }
+
+
+    private void initPopup() {
+        // build poup menu
+        popup = new JPopupMenu();
+        // Image Location
+        JMenuItem menuItem = new JMenuItem("Image Location");
+        menuItem.setMnemonic(KeyEvent.VK_P);
+        menuItem.getAccessibleContext().setAccessibleDescription(
+                "Image Location");
+        menuItem.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(mainFrame, graph.getImg(),catalog.getGraphs().get(listOfGraphs.getSelectedIndex()).getName(),JOptionPane.PLAIN_MESSAGE);
+            }
+        });
+        popup.add(menuItem);
+        // Def Location
+        menuItem = new JMenuItem("Def Location");
+        menuItem.setMnemonic(KeyEvent.VK_P);
+        menuItem.getAccessibleContext().setAccessibleDescription(
+                "Def Location");
+        menuItem.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(mainFrame, graph.getTgf(),catalog.getGraphs().get(listOfGraphs.getSelectedIndex()).getName(),JOptionPane.PLAIN_MESSAGE);
+            }
+        });
+        popup.add(menuItem);
+        // Search on Web
+        menuItem = new JMenuItem("Search on web");
+        menuItem.setMnemonic(KeyEvent.VK_P);
+        menuItem.getAccessibleContext().setAccessibleDescription(
+                "Search on web");
+
+        menuItem.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    URI uri = new URI("https://www.google.com/search?q=" + graph.getName() + "+graph+theory");
+                    Desktop desktop = null;
+                    if (Desktop.isDesktopSupported()) {
+                        desktop = Desktop.getDesktop();
+                    }
+
+                    if (desktop != null)
+                        desktop.browse(uri);
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                } catch (URISyntaxException use) {
+                    use.printStackTrace();
+                }
+            }
+        });
+        popup.add(menuItem);
+
+        // add mouse listener
+        listOfGraphs.addMouseListener(new MouseAdapter() {
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                showPopup(e);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                showPopup(e);
+            }
+
+            private void showPopup(MouseEvent e) {
+                if (!listOfGraphs.isSelectionEmpty())
+                {
+                    if (e.isPopupTrigger()) {
+                        graph = catalog.getGraphs().get(listOfGraphs.getSelectedIndex());
+                        popup.show(e.getComponent(),
+                                e.getX(), e.getY());
+                    }
+                }
+            }
+        });
+
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        mainFrame.setSize(300, 200);
+        mainFrame.setVisible(true);
     }
 
     private void initListeners() {
@@ -81,6 +176,7 @@ public class MainFrameController {
         openImg.addActionListener(new OpenImage());
         saveCatalog.addActionListener(new SaveCatalog());
         loadCatalog.addActionListener(new LoadCatalog());
+        generateReport.addActionListener(new GenerateReport());
     }
 
     private void clearOnClick(JTextField element) {
@@ -101,6 +197,8 @@ public class MainFrameController {
             else{
                 graph.setType("Directed");
             }
+            graph.setNrOfVertices(parseInt(nrOfVertices.getText()));
+            graph.setNrOfNodes(parseInt(nrOfNodes.getText()));
             catalog.add(graph);
             model.addElement(graph);
             graph = new Graph();
@@ -217,6 +315,28 @@ public class MainFrameController {
                     c.printStackTrace();
                 }
             }
+        }
+    }
+
+    private class GenerateReport implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            JFileChooser fileChooser = new JFileChooser(catalog.getFolder());
+            FileFilter filter = new FileNameExtensionFilter("HTML file", "html");
+            fileChooser.setFileFilter(filter);
+            if (fileChooser.showSaveDialog(mainFrame) == JFileChooser.APPROVE_OPTION) {
+                File file;
+                if (!fileChooser.getSelectedFile().toString().endsWith(".html")) {
+                    file = new File(fileChooser.getSelectedFile().toString() + ".html");
+                }
+                else {
+                    file = fileChooser.getSelectedFile();
+                }
+                Generate generator = new Generate(catalog,file.getPath());
+                generator.reportHTML();
+
+            }
+            else
+                showMessageDialog(null,"Generarea a reusit!");
         }
     }
 }

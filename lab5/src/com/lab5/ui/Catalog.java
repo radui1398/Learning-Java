@@ -20,6 +20,20 @@ public class Catalog implements java.io.Serializable {
      *
      * @param folder - folder.
      */
+
+    public Catalog(){
+
+    }
+
+    private static Catalog instance;
+
+    public static Catalog getInstance(){
+        if(instance == null){
+            instance = new Catalog();
+        }
+        return instance;
+    }
+
     public Catalog(String folder) {
         this.folder = folder;
     }
