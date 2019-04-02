@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="517e9c20-8916-4cfb-86ad-26998fee5f20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laborator6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laborator6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/Canvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/Canvas$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/Canvas$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/Canvas$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/Canvas$DrawType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/Canvas$DrawType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/Canvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/DrawingFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laborator6/out/production/Laborator6/com/company/app/DrawingFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laborator6/src/com/company/app/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laborator6/src/com/company/app/Canvas.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/controller/MainFrameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+            <state relative-caret-position="273">
+              <caret line="128" column="43" lean-forward="true" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,7 +191,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,16 +256,18 @@
       <workItem from="1553471163816" duration="3225000" />
       <workItem from="1553526831173" duration="61000" />
       <workItem from="1553529803482" duration="43000" />
+      <workItem from="1553584180364" duration="233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17924000" />
+    <option name="totallyTimeSpent" value="18157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1366" height="734" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2670713" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27162367" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,14 +406,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5/ui/controller/MainFrameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+        <state relative-caret-position="273">
+          <caret line="128" column="43" lean-forward="true" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3834#3835#0" expanded="true" />
-            <element signature="e#3878#3879#0" expanded="true" />
-            <element signature="e#3955#3956#0" expanded="true" />
-            <element signature="e#3999#4000#0" expanded="true" />
           </folding>
         </state>
       </provider>

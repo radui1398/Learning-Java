@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="org.openjfx:javafx-base:11" level="project" />
+    <orderEntry type="library" exported="" name="com.appslandia:appslandia-javafx:1.5" level="project" />
   </component>
 </module>

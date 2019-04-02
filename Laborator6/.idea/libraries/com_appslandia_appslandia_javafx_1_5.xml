@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.appslandia:appslandia-javafx:1.5" type="repository">
+    <properties maven-id="com.appslandia:appslandia-javafx:1.5" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/appslandia/appslandia-javafx/1.5/appslandia-javafx-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
