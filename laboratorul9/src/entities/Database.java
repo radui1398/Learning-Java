@@ -27,10 +27,10 @@ public class Database {
     }
 
     public static void createConnection() throws SQLException {
-        System.out.println("Loading driver...");
+        //System.out.println("Loading driver...");
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            System.out.println("Driver loaded!");
+            //System.out.println("Driver loaded!");
         } catch (ClassNotFoundException e) {
             throw new IllegalStateException("Cannot find the driver in the classpath!", e);
         }

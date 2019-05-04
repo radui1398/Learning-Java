@@ -1,8 +1,10 @@
 package dao;
 
 import entities.Database;
+import entities.Movie;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class MovieController {
     public void create(String name,int director_id) throws SQLException {
@@ -32,6 +34,18 @@ public class MovieController {
         try (Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery("select id from movies where id = '"+id+"'")) {
             return rs.next() ? rs.getString(1) : null;
+        }
+    }
+
+    public ArrayList<Movie> findAll() throws SQLException {
+        Connection con = Database.getConnection();
+        try (Statement stmt = con.createStatement();
+             ResultSet rs = stmt.executeQuery("select * from movies")) {
+            ArrayList<Movie>listOfMovies=new ArrayList<Movie>();
+            while (rs.next()) {
+                listOfMovies.add(new Movie(rs.getInt(1),rs.getString(2),rs.getInt(3)));
+            }
+            return listOfMovies;
         }
     }
 }
