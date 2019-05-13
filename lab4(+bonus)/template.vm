@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+    <TITLE>Catalog Report</TITLE>
+</HEAD>
+
+
+<BODY>
+<CENTER>
+    <B>$itemList.size() Graphs!</B>
+
+    #set( $count = 1 )
+    <TABLE>
+        #foreach( $item in $itemList )
+            <TR>
+                <TD>$count)</TD>
+                <TD>$item.name</TD>
+                <TD>$item.tgfPath</TD>
+                <TD>$item.pngPath</TD>
+            </TR>
+            #set( $count = $count + 1 )
+        #end
+    </TABLE>
+</CENTER>
+
+</BODY>
+</HTML>
